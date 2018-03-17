@@ -1,13 +1,9 @@
 - name: Hello World Sample
   hosts: localhost
-  gather_facts: True
-  tasks:
-    - name: Hello Message
-      debug:
-        msg: "Hello World!"      
+  tasks:    
     - name: Get facts
       azure_rm_resourcegroup_facts:
       register: output
       
-- debug: var=output
+    - debug: var=output
       
