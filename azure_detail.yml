@@ -6,4 +6,9 @@
       register: output
       
     - debug: var=output
+    
+    - name: Power On
+      azure_rm_virtualmachine:
+        resource_group: EXTEDO-China-Demo
+        name: "{{ vm-name }}"    
       
