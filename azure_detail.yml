@@ -9,3 +9,5 @@
       azure_rm_resourcegroup_facts:
       register: output
       
+- debug: var=output
+      
