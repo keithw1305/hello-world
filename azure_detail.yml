@@ -3,7 +3,6 @@
   tasks:
     - name: Hello Message
       debug:
-        msg: "Hello World!"
-        
-- name: Get facts
-  azure_rm_resourcegroup_facts:      
+        msg: "Hello World!"      
+    - name: Get facts
+      azure_rm_resourcegroup_facts:      
