@@ -6,4 +6,6 @@
       debug:
         msg: "Hello World!"      
     - name: Get facts
-      azure_rm_resourcegroup_facts:      
+      azure_rm_resourcegroup_facts:
+      debug:
+        var: result
