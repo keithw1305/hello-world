@@ -1,5 +1,4 @@
 - name: Hello World Sample
-  hosts: localhost
   tasks:    
     - name: Get facts
       azure_rm_resourcegroup_facts:
